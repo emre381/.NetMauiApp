@@ -68,7 +68,6 @@ Herhangi bir sorun ya da öneriniz varsa, lütfen benimle iletişime geçin.
 - **Kurulum:** Kullanıcılara projeyi nasıl kuracaklarını gösterir.
 - **Kullanım:** Uygulamanın nasıl kullanılacağına dair adım adım bilgiler verir.
 - **Katkıda Bulunma:** Diğer geliştiricilerin projeye katkıda bulunma yollarını açıklar.
-- **Lisans:** Projenizin hangi lisans altında olduğunu belirtir.
 - **İletişim:** Kullanıcıların sizinle nasıl iletişim kurabileceklerini gösterir.
 
 Bu şablonu ihtiyaçlarınıza göre düzenleyebilirsiniz. Herhangi bir ek bilgiye ihtiyaç duyarsanız, lütfen bana bildirin!
