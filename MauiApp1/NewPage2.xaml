@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage2"
+             Title="Kök Hesaplama">
+    <StackLayout Padding="20">
+        <Label Text="Denklem Kök Hesaplama"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="AValue"
+               Placeholder="a değeri"
+               Keyboard="Numeric" />
+        <Entry x:Name="BValue"
+               Placeholder="b değeri"
+               Keyboard="Numeric" />
+        <Entry x:Name="CValue"
+               Placeholder="c değeri"
+               Keyboard="Numeric" />
+
+        <Button Text="Kökleri Hesapla"
+                Clicked="OnCalculateClicked" />
+
+        <Label x:Name="ResultLabel"
+               FontSize="18"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             Title="Elektronik Aletlerin Güç Tüketimi Hesabı">
+
+    <StackLayout Padding="20" Spacing="15">
+
+        <!-- Direnç Girdisi -->
+        <Label Text="Direnç (Ohm):" FontSize="Medium" />
+        <Entry x:Name="DirencEntry" Placeholder="Ohm cinsinden direnç değeri girin" Keyboard="Numeric" />
+
+        <!-- Akım Girdisi -->
+        <Label Text="Akım (Amper):" FontSize="Medium" />
+        <Entry x:Name="AkimEntry" Placeholder="Amper cinsinden akım değeri girin" Keyboard="Numeric" />
+
+        <!-- Zaman Girdisi -->
+        <Label Text="Zaman (Dakika):" FontSize="Medium" />
+        <Entry x:Name="ZamanEntry" Placeholder="Dakika cinsinden zaman değeri girin" Keyboard="Numeric" />
+
+        <!-- Hesapla Butonu -->
+        <Button Text="Hesapla" FontSize="Medium" Clicked="Button_Clicked" />
+
+        <!-- Sonuç Gösterimi -->
+        <Label x:Name="SonucLabel" FontSize="Medium" TextColor="Green" Text="Sonuç burada görüntülenecek" />
+
+    </StackLayout>
+
+
+</ContentPage>

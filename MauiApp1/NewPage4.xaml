@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage4"
+             Title="Hacim ve Silindir Hesabı">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <Label Text="Dikdörtgen ve Silindirin Alan ve Hacim Hesabı"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Uzunluk (m):" />
+            <Entry x:Name="FieldLengthEntry"
+                   Keyboard="Numeric" />
+
+            <Label Text="Genişlik (m):" />
+            <Entry x:Name="FieldWidthEntry"
+                   Keyboard="Numeric" />
+
+            <Label Text="Dik Silindir Yüksekliği (m):" />
+            <Entry x:Name="CylinderHeightEntry"
+                   Keyboard="Numeric" />
+
+            <Label Text="Dik Silindir Çapı (m):" />
+            <Entry x:Name="CylinderDiameterEntry"
+                   Keyboard="Numeric" />
+
+            <Button Text="Hesapla"
+                    Clicked="OnCalculateClicked" />
+
+            <Label x:Name="ResultLabel"
+                   FontSize="18"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" Padding="20" VerticalOptions="Center">
+            <Label Text="Silindirin Alan ve Hacmi"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="CylinderAreaLabel" />
+            <Label x:Name="CylinderVolumeLabel" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

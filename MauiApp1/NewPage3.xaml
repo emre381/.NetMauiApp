@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage3"
+             Title="Ortalama Hız ve Süre Hesabı">
+    <StackLayout Padding="20">
+        <Label Text="Araç Hızı ve Mesafe Hesaplama"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="SpeedEntry"
+               Placeholder="Ortalama Hız (km/s)"
+               Keyboard="Numeric" />
+        <Entry x:Name="DistanceEntry"
+               Placeholder="Mesafe (km)"
+               Keyboard="Numeric" />
+
+        <Button Text="Hesapla"
+                Clicked="OnCalculateClicked" />
+
+        <Label x:Name="ResultLabel"
+               FontSize="18"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

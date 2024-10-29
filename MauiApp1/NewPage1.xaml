@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="Döviz Dönüştürücü">
+    <StackLayout Padding="20" Spacing="15">
+
+        <!-- Miktar Girdisi -->
+        <Label Text="Çevrilecek Miktar:" FontSize="Medium" />
+        <Entry x:Name="MiktarEntry" Placeholder="Miktar girin" Keyboard="Numeric" />
+
+        <!-- Kaynak Döviz Seçimi -->
+        <Label Text="Kaynak Döviz:" FontSize="Medium" />
+        <Picker x:Name="KaynakDovizPicker" />
+
+        <!-- Hedef Döviz Seçimi -->
+        <Label Text="Hedef Döviz:" FontSize="Medium" />
+        <Picker x:Name="HedefDovizPicker" />
+
+        <!-- Çevir Butonu -->
+        <Button Text="Çevir" FontSize="Medium" Clicked="Button_Clicked" />
+
+        <!-- Sonuç Gösterimi -->
+        <Label x:Name="SonucLabel" FontSize="Medium" TextColor="Green" Text="Sonuç burada görüntülenecek" />
+
+        <!-- Haber Başlıkları -->
+        <Label Text="Son Haberler:" FontSize="Large" Margin="0,20,0,10" />
+        <ListView x:Name="HaberlerListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>
